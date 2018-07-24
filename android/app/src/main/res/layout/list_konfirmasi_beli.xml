@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/no"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:background="@drawable/isi_kolom"/>
+            <TextView
+                android:id="@+id/nama"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:background="@drawable/isi_kolom"/>
+            <TextView
+                android:id="@+id/jumlah"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@drawable/isi_kolom"/>
+            <TextView
+                android:id="@+id/total"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@drawable/isi_kolom"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

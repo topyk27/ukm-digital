@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_kampung"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lat"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lng"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Kampung"
+        android:id="@+id/nama_kampung"
+        android:gravity="center"
+        android:paddingBottom="@dimen/activity_horizontal_margin"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alamat_kampung"
+        android:visibility="gone"/>
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/gambar"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_profil"
+            android:visibility="gone"/>
+
+
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/gambar"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Profil"
+            android:textAlignment="center"
+            android:id="@+id/nama"
+            android:textSize="18sp"
+            android:paddingBottom="@dimen/activity_horizontal_margin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="deskripsi"
+
+            android:id="@+id/deskripsi"
+            android:paddingBottom="@dimen/activity_horizontal_margin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="link"
+            android:textAlignment="center"
+            android:id="@+id/link"
+            android:textColor="#0000FF"/>
+
+        <Button
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ubah"
+            android:id="@+id/but_ubah"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</ScrollView>

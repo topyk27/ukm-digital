@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Barang"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nama barang"
+            android:id="@+id/nama_barang"
+            android:inputType="text"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkharga0"
+                android:layout_weight="0.3"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Harga kurang dari"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/harga0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_weight="1.7"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkharga1"
+                android:layout_weight="0.3"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Harga lebih dari"
+                android:layout_weight="1"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/harga1"
+                android:inputType="number"
+                android:layout_weight="1.7"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkHargaAntara"
+                android:layout_weight="0.3"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Harga diantara"
+                android:layout_weight="1"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/harga0Antara"
+                android:inputType="number"
+                android:hint="harga terendah"
+                android:layout_weight="1.7"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/harga1Antara"
+                android:inputType="number"
+                android:hint="harga tertinggi"
+                android:layout_weight="1.7"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:weightSum="3">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Jenis barang"
+                android:layout_weight="1.3"/>
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:spinnerMode="dropdown"
+                android:background="@android:drawable/btn_dropdown"
+                android:id="@+id/spinner"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginTop="@dimen/activity_horizontal_margin">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cari"
+                android:id="@+id/butCari"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:layout_weight="1"
+                android:id="@+id/butReset"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="batal"
+                android:id="@+id/butBatal"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</ScrollView>

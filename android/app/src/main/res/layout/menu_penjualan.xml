@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textPenjualan"
+            android:text="Penjualan"
+            android:layout_centerHorizontal="true"
+            android:textSize="24dp"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabelPenjualan"
+            android:layout_below="@+id/textPenjualan">
+            <TableRow
+                android:id="@+id/tabel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/noKolom1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:text="No."
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/namaBarangKolom1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:text="Transaksi"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical|center_horizontal"/>
+                <TextView
+                    android:id="@+id/pembeliKolom1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:text="Tanggal"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|center_horizontal"/>
+                <TextView
+                    android:id="@+id/statusKolom1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dp"
+                    android:text="Status"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|center_horizontal"/>
+
+            </TableRow>
+        </TableLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_penjualan"
+            android:layout_below="@+id/tabelPenjualan"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Belum Ada Penjualan"
+            android:id="@+id/textBelumAdaPenjualan"
+            android:layout_below="@+id/list_penjualan"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</ScrollView>

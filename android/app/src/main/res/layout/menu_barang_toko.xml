@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtBarangKosong"
+        android:text="Belum Ada Yang Dijual"
+        android:layout_gravity="top|center"
+        android:visibility="gone"/>
+    <ListView
+        android:layout_below="@+id/txtBarangKosong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_barang"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="20sp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@mipmap/plus"
+            app:backgroundTint="@color/white"
+            android:visibility="gone"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/endBelanja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@mipmap/keranjang"
+            app:backgroundTint="@color/white"
+            android:visibility="gone"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

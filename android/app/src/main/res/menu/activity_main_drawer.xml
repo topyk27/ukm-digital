@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item android:title="Daftar Kampung"-->
+        <!--android:orderInCategory="500"-->
+        <!--android:id="@+id/daftarKampung">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/citra"-->
+                <!--android:icon="@drawable/ic_menu_camera"-->
+                <!--android:title="Citra Niaga" />-->
+            <!--<item-->
+                <!--android:id="@+id/tenun"-->
+                <!--android:icon="@drawable/ic_menu_camera"-->
+                <!--android:title="Kampung Tenun" />-->
+            <!--<item-->
+                <!--android:id="@+id/wadai"-->
+                <!--android:icon="@drawable/ic_menu_camera"-->
+                <!--android:title="Kampung Wadai" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+    <item android:title="About"
+        android:orderInCategory="1000">
+        <menu>
+            <item
+                android:id="@+id/ukm"
+                android:icon="@drawable/about"
+
+                android:title="UKM Digital"
+                />
+            <item
+                android:id="@+id/unmul"
+                android:icon="@drawable/about"
+                android:title="Universitas Mulawarman"
+                />
+        </menu>
+    </item>
+    <group
+        android:checkableBehavior="single"
+        android:orderInCategory="100">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="Dashboard" />
+
+        <item
+            android:id="@+id/toko"
+            android:icon="@drawable/toko"
+            android:title="UKM" />
+
+        <item
+            android:id="@+id/toko_list"
+            android:title="Daftar UKM"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/tokoku"
+            android:title="UKM ku"
+            android:visible="false" />
+
+
+        <item
+            android:id="@+id/transaksi"
+            android:icon="@drawable/transaksi"
+            android:title="Transaksi" />
+        <item
+            android:id="@+id/penjualan"
+            android:title="Penjualan"
+            android:visible="false" />
+        <item
+            android:id="@+id/pembelian"
+            android:title="Pembelian"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/anggota"
+            android:title="Kelola Anggota"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/kampung"
+            android:icon="@drawable/kelola_kampung"
+            android:title="Kelola Kampung"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/jenis"
+            android:icon="@drawable/kelola_jenis_barang"
+            android:title="Kelola Jenis Barang"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/login"
+            android:icon="@drawable/login"
+            android:title="Login" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+</menu>

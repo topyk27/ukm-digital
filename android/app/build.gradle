@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.example.topyk.ukmdigital"
+        minSdkVersion 17
+        targetSdkVersion 25
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    //coba install di api 17
+    dexOptions{
+        javaMaxHeapSize "4g"
+    }
+    //end coba
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //coba bikin apk
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+    }
+//    end coba
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.0'
+    compile 'com.android.support:design:25.3.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+//namevaluepiar
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+//    end namevalue
+    //    coba upload gambar
+    compile 'net.gotev:uploadservice:2.1'
+//    end coba
+    compile 'com.google.android.gms:play-services:10.2.1'
+    //coba fix error multidex
+    compile 'com.android.support:multidex:1.0.1'
+    //end coba fix multidex
+
+//    coba chat
+//    compile 'com.google.firebase:firebase-core:9.2.0'
+//    compile 'com.google.firebase:firebase-database:9.2.0'
+//    compile 'com.firebase:firebase-client-android:2.3.1'
+//    end coba
+}

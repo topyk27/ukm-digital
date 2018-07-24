@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Username"
+        android:id="@+id/email"
+        />
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:id="@+id/password"
+        />
+
+
+
+    <Button
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:id="@+id/but_login"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Belum punya akun?"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+        android:id="@+id/daftar"/>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/adm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:visibility="gone"/>
+
+        </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

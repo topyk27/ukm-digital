@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:paddingBottom="32dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Syarat dan Ketentuan"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:paddingTop="@dimen/activity_horizontal_margin"/>
+        <TextView
+            android:id="@+id/textBuatToko"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tulisannya"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:layout_margin="@dimen/activity_horizontal_margin"/>
+        <CheckBox
+            android:id="@+id/cekBuatToko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya setuju"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:id="@+id/but_buat_toko"
+            android:text="Buat UKM"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

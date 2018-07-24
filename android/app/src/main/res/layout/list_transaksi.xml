@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent" android:layout_height="fill_parent"-->
+    <!--android:fillViewport="true"-->
+    <!--android:scrollbars="none">-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_transaksi"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_barang"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jumlah_barang"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/waktu"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/total"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_anggota"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alamat"
+        android:visibility="gone"/>
+
+    <!--<TableRow-->
+        <!--android:id="@+id/tabel"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"></TableRow>-->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabel1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="8">
+            <TextView
+                android:id="@+id/no_transaksi"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/isi_kolom"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/nama_barang"
+                android:padding="10dp"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/isi_kolom"
+                android:layout_weight="3"/>
+             <!--nama_barang itu id_transaksi -->
+            <TextView
+                android:id="@+id/nama_pembeli"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/isi_kolom"
+
+                android:layout_weight="2"/>
+            <!--nama_pembeli diganti dengan waktu-->
+            <TextView
+                android:id="@+id/status"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/isi_kolom"
+                android:layout_weight="2"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+</LinearLayout>
+    <!--</ScrollView>-->
